@@ -68,8 +68,9 @@ jobs:
     #- name: Build Java
     # uses: github/codeql-action/autobuild@v3
     - name: Build Java 
-      run: |
-      mvn clean package -f tools/deploy/module2/pom.xml
+  run: |
+    mvn clean package -f tools/deploy/module2/pom.xml
+
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
